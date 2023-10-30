@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<!--
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
--->
+
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Criar produto</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-         <link rel="stylesheet" href="style.css">
+         <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="script.js"></script>
@@ -17,7 +14,12 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
         
                        <div id="Testing"></div>
 
-<form>
+                               <div id="sucesso" th:if="${status}" style="display: block;" class="alert alert-success">
+    Sucesso! A operação foi concluída com êxito.
+</div>
+
+                       
+  <form action="http://localhost:8080/createProduct" method="post">
     <br/>
     
     <div class="container border p-3">
@@ -33,44 +35,55 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit thi
           </div>
             
             <div class="col-10 pb-3">
-                <input  class="form-control" placeholder="insira o nome do produto" required/>
+                <input  class="form-control" placeholder="insira o nome do produto" name="nome" required/>
                 <span class="text-danger"> </span>
             </div>
             <div class="col-2">
                 <label  class="control-label pt-2" style="font-size:20px;"> Categoria </label>
             </div>
             <div class="col-10 pb-3">
-                <input  class="form-control" placeholder="Insira a categoria do produto" required/>
-                <span a class="text-danger"></span>
+           <select id="categoria" class="form-control" name="categoria">
+           <option selected></option>
+           <option>Eletrônicos</option>    
+           <option>Moda e Vestuário</option>          
+           <option>Alimentos e Bebidas</option>          
+           <option>Móveis e Decoração</option>          
+           <option>Saúde e Beleza</option>          
+           <option>Automóveis e Peças</option>          
+           <option>Joias e Acessórios</option>                 
+        </select>   <span a class="text-danger"></span>
+                
+                
+                
             </div>
             <div class="col-2">
                 <label  class="control-label pt-2" style="font-size:20px;">Descrição</label>
             </div>
             <div class="col-10 pb-3">
-                <textarea class="form-control" rows="5" placeholder="Insira a descrição do produto" required></textarea>
+                <textarea class="form-control" rows="5" placeholder="Insira a descrição do produto" name="descricao" required></textarea>
                 <span class="text-danger"></span>
             </div>
             <div class="col-2">
                 <label  class="control-label pt-2" style="font-size:20px;" > Preço </label>
             </div>
             <div class="col-10 pb-3">
-                <input class="form-control" placeholder="insira o preço" required/>
+                <input class="form-control" placeholder="insira o preço" required name="preco"/>
                 <span class="text-danger"></span>
             </div>
             <div class="col-2">
                 <labelclass="control-label pt-2" style="font-size:20px;"> Quantidade</label>
             </div>
             <div class="col-10 pb-3">
-                <input  class="form-control" placeholder="insira a quantidade do produto em estoque" required/>
+                <input  class="form-control" placeholder="insira a quantidade do produto em estoque" name="quantidade" required/>
                 <span  class="text-danger"></span>
             </div>
 
             <div class="col-5 offset-2">
-                <a href="./products.html" class="btn-primary btn form-control ">Voltar</a>
+                <a href="/products" class="btn-primary btn form-control ">Voltar</a>
             </div>
 
             <div class="col-5">            
-              <button type="submit" class="btn btn-success form-control" onclick="Teste()"> Criar</button>
+              <button type="submit" class="btn btn-success form-control"> Criar</button>
             </div>
 
         </div>
