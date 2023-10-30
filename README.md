@@ -38,9 +38,4 @@ O sistema BestBuy é uma plataforma projetada para facilitar e automatizar o pro
 <H2> 5. Funcionalidades:  </H2>
 
  Catálogo de produtos: O sistema BestBuy oferece um catálogo completo de produtos, onde os vendedores podem adicionar, atualizar e organizar informações sobre os produtos, como descrição, preço, imagens e especificações técnicas. Isso facilita a localização e apresentação dos produtos aos clientes. (Após selecionar o produto, o pedido segue ao carrinho, e consequentemente podendo ser finalizado ou removido do carrinho).
-0 comments on commit 12bebea
-@uLucasBorges
- 
-Leave a comment
-Nenhum arquivo escolhido
-Attach files by dragging & dropping, selecting or pasting them.
+
