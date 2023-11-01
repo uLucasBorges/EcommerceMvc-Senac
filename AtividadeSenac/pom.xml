@@ -62,7 +62,7 @@
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
                                  <configuration>
-                <mainClass>br.com.coding.atividadesenac.SenacwebApplication</mainClass>
+<mainClass>br.com.coding.atividadesenac.SenacwebApplication</mainClass>
             </configuration>
 			</plugin>
 		</plugins>
