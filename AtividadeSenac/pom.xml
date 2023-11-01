@@ -59,8 +59,6 @@
 	<build>
 		<plugins>
 			<plugin>
-                            <mainClass>br.com.coding.atividadesenac.SenacwebApplication</mainClass>
-
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
