@@ -21,8 +21,18 @@ Atualmente, o sistema BestBuy encontra-se em fase de desenvolvimento para atende
   </P>
 </div>
 
-  <P> #Lingugagem: Java   <div style="display: inline_block"><br> <img align="center" alt="Csharp" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
-  </P></div>
+  <P> #Backend: Java  <div style="display: inline_block"><br> <img align="center" alt="Csharp" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg">
+  </P>
+
+  <P> #Frontend: JavaScript, HTML, Css & Bootstrap  <div style="display: inline_block">
+ <div>
+    <img align="center" alt="JavaScript" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg">
+    <!-- Add more icons or content here -->
+    <img align="center" alt="HTML" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg">
+    <img align="center" alt="CSS" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg">
+    <img align="center" alt="Bootstrap" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg">
+  </div>
+  </P>
 
 
 <H2> 3.Time de Desenvolvimento: </H2>
@@ -38,4 +48,5 @@ O sistema BestBuy é uma plataforma projetada para facilitar e automatizar o pro
 <H2> 5. Funcionalidades:  </H2>
 
  Catálogo de produtos: O sistema BestBuy oferece um catálogo completo de produtos, onde os vendedores podem adicionar, atualizar e organizar informações sobre os produtos, como descrição, preço, imagens e especificações técnicas. Isso facilita a localização e apresentação dos produtos aos clientes. (Após selecionar o produto, o pedido segue ao carrinho, e consequentemente podendo ser finalizado ou removido do carrinho).
+
 
