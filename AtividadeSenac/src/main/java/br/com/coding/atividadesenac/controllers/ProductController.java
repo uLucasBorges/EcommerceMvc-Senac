@@ -116,7 +116,7 @@ public class ProductController  extends HttpServlet  {
        
         this.productRepository.deleteById(id);
 
-        model.addAttribute("status", true);
+        model.addAttribute("status122", true);
         
         return "products.html";
     } 
